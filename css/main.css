@@ -1,0 +1,337 @@
+:root {
+    --white: #fff;
+    --width: 700px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+    max-width: var(--width);
+    width: var(--width);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.search {
+    border-radius: 7px;
+    justify-content: space-between;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.card-body {
+    margin-top: 10px;
+    border-radius: 7px;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 70px;
+}
+
+.profile-stack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.profile-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-bio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-repo {
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-item {
+    height: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f0 {
+    font-size: 1rem;
+}
+
+.f1 {
+    font-size: 1.1rem;
+}
+
+input[type="text"] {
+    height: 30px;
+    border: none;
+    font-weight: 100;
+    min-width: 300px;
+}
+
+@media only screen and (min-width: 620px) {
+    .profile-footer-row {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    input[type="text"] {
+        min-width: 200px;
+    }
+
+    div {
+        font-size: 2rem;
+    }
+    
+    div.mode{
+        font-size: 1rem;
+    }
+
+    i, input {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        height: 200px;
+    }
+
+    .profile-detail {
+        flex-direction: column;
+    }
+
+    .profile-footer {
+        flex-direction: column;
+    }
+
+    .profile-repo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .c {
+        text-align: center;
+    }
+
+    .footer-item {
+        height: 60px;
+    }
+
+    .footer-item i {
+        font-size: 2rem;
+    }
+
+    .footer-item, .f0 {
+        font-size: 1.5rem;
+    }
+
+    .profile-footer-row {
+        flex-direction: column;
+    }
+
+    .card-body {
+        flex-direction: column;
+    }
+
+    .profile-stack {
+        padding-left: 0px;
+    }
+
+    .profile-repo .f0 {
+        font-size: 2rem;
+    }
+
+    .profile-repo .f1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-bio.f0, #profile-date.f1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .footer-item {
+        height: 50px;
+    }
+}
+
+#no-profile {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+.pr-05 {
+    padding-right: 5px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.b {
+    font-weight: bolder;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inner-search {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.05rem;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: 100;
+    height: 80%;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 0.25rem;
+}
+
+.mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

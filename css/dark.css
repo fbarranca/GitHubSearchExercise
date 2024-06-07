@@ -1,0 +1,102 @@
+:root {
+    --primary: rgb(20, 28, 47);
+    --secondary: rgb(31, 42, 72);
+    --grey: rgb(230, 230, 230);
+    --blue: rgb(76, 110, 190);
+    --blue-hover: rgb(53, 81, 146);
+    --light-blue: rgb(158, 186, 251);
+    --light-blue-hover: rgb(76, 110, 190);
+    --white: #fff;
+    --bar-track:rgb(1, 4, 17);
+}
+
+body {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.main-card {
+    background-color: var(--primary);
+}
+
+.icon-secondary {
+    color: var(--blue);
+}
+
+input {
+    color: var(--white);
+    background-color: var(--secondary);
+}
+
+.lt-blue {
+    color: var(--light-blue);
+}
+
+::placeholder {
+    color: var(--light-blue);
+}
+
+.btn {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--blue-hover);
+}
+
+a.github {
+    color: var(--white);
+}
+
+a.profile {
+    color: var(--light-blue);
+}
+
+a.profile:hover {
+    color: var(--light-blue-hover);
+}
+
+a.footer {
+    color: var(--grey);
+}
+
+a.footer:hover {
+    color: var(--white);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
+
+.slider {
+    background-color: var(--secondary);
+}
+
+.slider:before {
+    background-color: var(--primary);
+}
+
+input:checked+.slider {
+    background-color: var(--blue);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--blue);
+}

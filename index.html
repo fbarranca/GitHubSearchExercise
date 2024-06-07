@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Dev Finder</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="js/app.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="secondary main-card">
+            <div class="card-header">
+                <div class="f1 b">GitHub Dev Finder</div>
+                <div class="mode">
+                    <span class="pr-05"><i id="theme-mode-icon" class="fa-regular fa-moon"></i></span>
+                    <label class="switch">
+                        <input type="checkbox" id="chkTheme">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="search secondary">
+                <div class="inner-search">
+                    <i class="fa-solid fa-magnifying-glass icon-secondary pr-1"></i>
+                    <input type="text" placeholder="Search for GitHub User" id="txtUser">
+                </div>
+                <button class="btn" id="btnGitHubSearch">Search <i id="search-loading"
+                        class="fa-solid fa-gear fa-spin hide"></i></button>
+            </div>
+            <div class="card-body secondary hide" id="profile-result">
+                <div class="c">
+                    <img id="profile-img" class="profile-img" src="" alt="">
+                </div>
+                <div class="profile-stack">
+                    <div class="profile-detail c">
+                        <div class="b">
+                            <div id="profile-name"></div>
+                            <a id="profile-hash" class="profile" href="" target="_blank"></a>
+                        </div>
+                        <div id="profile-date" class="f1"></div>
+                    </div>
+                    <div id="profile-bio" class="profile-bio f0 grey"></div>
+                    <div class="profile-repo primary">
+                        <div class="c">
+                            <div class="f0">Repos</div>
+                            <div id="profile-repo-count" class="f1 b"></div>
+                        </div>
+                        <div class="c">
+                            <div class="f0">Followers</div>
+                            <div id="profile-followers" class="f1 b"></div>
+                        </div class="c">
+                        <div class="c">
+                            <div class="f0">Following</div>
+                            <div id="profile-following" class="f1 b"></div>
+                        </div>
+                    </div>
+                    <div class="profile-footer">
+                        <div class="profile-footer-row">
+                            <div class="footer-item c"><i class="fa-solid fa-location-dot fa-fw"></i> <span
+                                    class="f0 grey" id="profile-city"></span></div>
+                            <div class="footer-item c"><i class="fa-solid fa-link fa-fw"></i>
+                                <a class="f0 footer" id="profile-web" href="" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="profile-footer-row">
+                            <div class="footer-item c"><i class="fa-brands fa-twitter fa-fw"></i>
+                                <a class="f0 footer" id="profile-twitter" href="" target="_blank"></a>
+                            </div>
+                            <div class="footer-item c"><i class="fa-solid fa-building fa-fw"></i> <span class="f0 grey"
+                                    id="profile-company"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="no-profile" class="hide">
+                <div class="pb-2"><i class="fa-regular fa-circle-xmark fa-4x"></i></div>
+                <span id="no-profile-msg"></span>
+            </div>
+            <div class="f1 b footer mt-1"><a href="https://github.com" target="_blank" class="github"><i
+                class="fa-brands fa-github fa-2x"></i></a></div>
+        </div>
+    </div>
+</body>
+
+</html>
